@@ -35,7 +35,6 @@ export default function Cannon(props) {
       friction: 50,
     },
     loop: true,
-    pause: true,
   });
 
   return (

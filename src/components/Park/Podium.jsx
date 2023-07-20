@@ -107,6 +107,7 @@ export const Podium = (props) => {
       friction: 40,
     },
     loop: true,
+    immediate: true,
   });
 
   return (

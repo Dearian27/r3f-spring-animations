@@ -99,22 +99,28 @@ export const Carousel = (props) => {
           </>
           {/* HAUNTED */}
           <>
-            <Witch
-              position={[-4, 3, -5]}
-              scale={[1.6, 1.6, 1.6]}
-              rotation-y={Math.PI * 1.25}
-            />
+            <Float speed={5} floatIntensity={0.1}>
+              <Witch
+                position={[-4, 3, -5]}
+                scale={[1.6, 1.6, 1.6]}
+                rotation-y={Math.PI * 1.25}
+                />
+            </Float>
             <BookCase
               position={[-7, 0, -1.5]}
               scale={[2, 2, 2]}
               rotation-y={Math.PI}
             />
+            <Float speed={3} floatIntensity={0.005}>
             <Fence
               position={[-7.5, 2, -7.5]}
               scale={[1.6, 1.6, 1.6]}
               rotation-y={Math.PI / 4}
-            />
-            <Cauldron position={[-2.8, 1, -8]} scale={[1.9, 1.9, 1.9]} />
+              />
+            </Float>
+            <Float speed={-1} floatIntensity={0.01}>
+              <Cauldron position={[-2.8, 1, -8]} scale={[1.9, 1.9, 1.9]} />
+            </Float>
           </>
           {/* BEACH */}
           <>

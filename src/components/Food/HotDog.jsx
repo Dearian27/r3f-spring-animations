@@ -68,7 +68,6 @@ export function HotDog(props) {
       friction: 80,
     },
     loop: true,
-    pause: true,
   });
 
   return (
