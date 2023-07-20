@@ -1,6 +1,7 @@
 import { ContactShadows, OrbitControls } from "@react-three/drei";
 
 import { Carousel } from "./Carousel";
+import Background from "./Background";
 
 export const Experience = () => {
   return (
@@ -12,6 +13,7 @@ export const Experience = () => {
 
       <Carousel />
       <ContactShadows scale={30} opacity={0.32} />
+      <Background />
     </>
   );
 };
